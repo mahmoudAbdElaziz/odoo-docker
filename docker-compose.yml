@@ -1,16 +1,16 @@
 version: '3.1'
 services:
   web:
-    image: odoo:14.0
-    container_name: odoo-14.0
+    image: odoo:16.0
+    container_name: odoo-16.0
     depends_on:
       - db
     ports:
-      - "8014:8069"
+      - "8016:8069"
     environment:
       - HOST=db
       - USER=odoo
-      - PASSWORD=myodoo
+      - PASSWORD=odoo
     volumes:
       - ./addons/extra-addons:/mnt/extra-addons
       - ./addons/enterprise:/mnt/enterprise
@@ -22,5 +22,5 @@ services:
     container_name: postgres-13
     environment:
       - POSTGRES_DB=postgres
-      - POSTGRES_PASSWORD=myodoo
+      - POSTGRES_PASSWORD=odoo
       - POSTGRES_USER=odoo

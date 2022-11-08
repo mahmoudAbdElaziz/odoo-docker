@@ -1,1 +1,1 @@
-# odoo-12-docker
+# odoo-docker
