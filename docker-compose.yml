@@ -1,12 +1,12 @@
 version: '3.1'
 services:
   web:
-    image: odoo:14.0
-    container_name: odoo-14.0
+    image: odoo:15
+    container_name: odoo-15
     depends_on:
       - db
     ports:
-      - "8014:8069"
+      - "8015:8069"
     environment:
       - HOST=db
       - USER=odoo
