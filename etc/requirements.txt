@@ -1,0 +1,8 @@
+langdetect
+ummalqura
+pandas
+bigbluebutton-api-python
+arabic-reshaper
+python-bidi
+pyzk
+zk
